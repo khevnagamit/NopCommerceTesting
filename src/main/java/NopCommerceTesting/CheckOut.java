@@ -55,7 +55,7 @@ public class CheckOut extends Utils {
         enterText(_PostalCode,loadProp.getProperties("GuestPostalCode"));
         enterText(_PhoneNumber,loadProp.getProperties("GuestPhone"));
         clickOnElement(_continueShippingAddress);
-//        timeWait();
+        timeWait();
         clickOnElement(_continueShipingMethod);
         clickOnElement(_paymentMethod);
         clickOnElement(_continuePaymentMethod);
@@ -66,13 +66,13 @@ public class CheckOut extends Utils {
         selectByIndexNumber(_cardExpiryYear,3);
         enterText(_cardCVVCode,loadProp.getProperties("CardCVVNumber"));
         clickOnElement(_continuePaymentInformation);
-//        timeWait();
+        timeWait();
         clickOnElement(_continueConfirmOrder);
     }
 
     public void registerUserCheckout(){
         clickOnElement(_continueShippingAddress);
-//        timeWait();
+        timeWait();
         clickOnElement(_continueShipingMethod);
         clickOnElement(_paymentMethod);
         clickOnElement(_continuePaymentMethod);
@@ -83,7 +83,7 @@ public class CheckOut extends Utils {
         selectByIndexNumber(_cardExpiryYear,3);
         enterText(_cardCVVCode,loadProp.getProperties("CardCVVNumber"));
         clickOnElement(_continuePaymentInformation);
-//        timeWait();
+        timeWait();
         clickOnElement(_continueConfirmOrder);
 
     }

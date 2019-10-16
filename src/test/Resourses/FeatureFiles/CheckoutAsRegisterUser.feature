@@ -1,4 +1,4 @@
-@Register @Checkout
+@Register
 Feature: As user I want to buy a product
   Scenario: User should able to buy a product
     Given user is loggedin
